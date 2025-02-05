@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chord Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Chord Finder</h1>
+        <p>Select an instrument and chord to view the chord diagram</p>
+    </header>
+
+    <main>
+        <div class="controls">
+            <label for="instrument">Select Instrument:</label>
+            <select id="instrument">
+                <option value="ukulele">Ukulele</option>
+                <option value="piano">Piano</option>
+                <option value="guitar">Guitar</option>
+            </select>
+            
+            <label for="chord">Select Chord:</label>
+            <select id="chord">
+                <option value="C">C Major</option>
+                <option value="G">G Major</option>
+                <option value="F">F Major</option>
+                <option value="Amin">A Minor</option>
+                <option value="Emin">E Minor</option>
+                <option value="D">D Major</option>
+                <option value="Bmin">B Minor</option>
+                <option value="E">E Major</option>
+                <option value="A">A Major</option>
+            </select>
+        </div>
+
+        <div class="chord-display">
+            <img id="chord-image" class="chord-image" src="" alt="Chord Diagram" />
+        </div>
+
+        <div class="navigation">
+            <button id="ukulele-button">Ukulele</button>
+            <button id="piano-button">Piano</button>
+            <button id="guitar-button">Guitar</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
